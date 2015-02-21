@@ -75,17 +75,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F26-jA-Cuh">
-                                <rect key="frame" x="33" y="334" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.24590754590547481" green="0.74166573947421299" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Level 1">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QU-4N-1bd">
                                 <rect key="frame" x="108" y="334" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.2459075459" green="0.74166573950000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Level 2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,7 +84,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl2-EZ-D0g">
                                 <rect key="frame" x="188" y="334" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.2459075459" green="0.74166573950000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Level 3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,7 +91,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyk-wu-sbp">
                                 <rect key="frame" x="265" y="334" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.2459075459" green="0.74166573950000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Level 4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,15 +98,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3j-Fr-5DY">
                                 <rect key="frame" x="344" y="334" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.2459075459" green="0.74166573950000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Level 5">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dIP-UX-gld">
-                                <rect key="frame" x="33" y="8" width="668" height="289"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7P-nM-QZY">
                                 <rect key="frame" x="622" y="347" width="79" height="34"/>
                                 <state key="normal" title="PLAY">
@@ -126,6 +111,16 @@
                                 <connections>
                                     <segue destination="px4-Y3-geG" kind="show" id="23Y-kf-Rd9"/>
                                 </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dIP-UX-gld">
+                                <rect key="frame" x="33" y="8" width="668" height="289"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F26-jA-Cuh">
+                                <rect key="frame" x="33" y="334" width="60" height="60"/>
+                                <state key="normal" title="Level 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -311,7 +306,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w41-bh-21Y"/>
+        <segue reference="23Y-kf-Rd9"/>
         <segue reference="cbm-zB-bF9"/>
         <segue reference="e0U-fI-ZW0"/>
     </inferredMetricsTieBreakers>
