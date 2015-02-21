@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="358" y="404"/>
         </scene>
-        <!--View Controller-->
+        <!--Map Selector Controller-->
         <scene sceneID="pcj-gv-cxy">
             <objects>
-                <viewController id="on3-A2-bL6" sceneMemberID="viewController">
+                <viewController id="on3-A2-bL6" customClass="MapSelectorController" customModule="Platformer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3mU-7b-NJF"/>
                         <viewControllerLayoutGuide type="bottom" id="kOx-Oe-KuQ"/>
@@ -81,6 +81,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mapSelected:" destination="on3-A2-bL6" eventType="touchUpInside" id="0Ff-OE-CES"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl2-EZ-D0g">
                                 <rect key="frame" x="188" y="334" width="60" height="60"/>
@@ -88,13 +91,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyk-wu-sbp">
-                                <rect key="frame" x="265" y="334" width="60" height="60"/>
-                                <state key="normal" title="Level 4">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="mapSelected:" destination="on3-A2-bL6" eventType="touchUpInside" id="uRd-bJ-SFB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3j-Fr-5DY">
                                 <rect key="frame" x="344" y="334" width="60" height="60"/>
@@ -102,6 +101,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mapSelected:" destination="on3-A2-bL6" eventType="touchUpInside" id="XtS-sH-TQk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7P-nM-QZY">
                                 <rect key="frame" x="622" y="347" width="79" height="34"/>
@@ -121,12 +123,33 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="mapSelected:" destination="on3-A2-bL6" eventType="touchUpInside" id="GqI-Mi-hTl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyk-wu-sbp">
+                                <rect key="frame" x="265" y="334" width="60" height="60"/>
+                                <state key="normal" title="Level 4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapSelected:" destination="on3-A2-bL6" eventType="touchUpInside" id="Igc-5F-BRL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="map1" destination="F26-jA-Cuh" id="rtA-oI-eQe"/>
+                        <outlet property="map2" destination="9QU-4N-1bd" id="o1q-5l-SXf"/>
+                        <outlet property="map3" destination="vl2-EZ-D0g" id="sD2-tc-7E6"/>
+                        <outlet property="map4" destination="nyk-wu-sbp" id="Sdk-P5-3qM"/>
+                        <outlet property="map5" destination="S3j-Fr-5DY" id="mHK-jt-Pw6"/>
+                        <outlet property="mapPreview" destination="dIP-UX-gld" id="JKh-NF-jzF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daU-h3-4wx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,16 +250,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2mk-bI-Vqu">
-                                <rect key="frame" x="0.0" y="48" width="736" height="366"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoH-ay-QoU">
                                 <rect key="frame" x="-19" y="6" width="129" height="45"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2mk-bI-Vqu">
+                                <rect key="frame" x="0.0" y="48" width="736" height="366"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -296,8 +319,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w41-bh-21Y"/>
-        <segue reference="e0U-fI-ZW0"/>
+        <segue reference="23Y-kf-Rd9"/>
         <segue reference="asc-yo-5Vj"/>
+        <segue reference="e0U-fI-ZW0"/>
     </inferredMetricsTieBreakers>
 </document>
