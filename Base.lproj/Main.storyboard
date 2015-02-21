@@ -22,6 +22,9 @@
                                 <state key="normal" title="New Game">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="on3-A2-bL6" kind="show" id="jNv-vr-iYF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK4-qW-429">
                                 <rect key="frame" x="286" y="133" width="165" height="38"/>
@@ -29,6 +32,9 @@
                                 <state key="normal" title="Highscores">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dsV-Tb-76A" kind="show" id="S4b-7r-m1F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzm-rK-z3j">
                                 <rect key="frame" x="286" y="200" width="165" height="38"/>
@@ -36,6 +42,9 @@
                                 <state key="normal" title="Options">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ok5-Rf-uJi" kind="show" id="P4n-TB-C0N"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHb-69-m48">
                                 <rect key="frame" x="286" y="263" width="165" height="38"/>
@@ -52,6 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="358" y="404"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pcj-gv-cxy">
@@ -113,6 +123,9 @@
                                 <state key="normal" title="PLAY">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="px4-Y3-geG" kind="show" id="23Y-kf-Rd9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -142,6 +155,9 @@
                                 <state key="normal" title="Resume">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="px4-Y3-geG" kind="show" id="w41-bh-21Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56f-GX-vMY">
                                 <rect key="frame" x="285" y="129" width="166" height="38"/>
@@ -149,6 +165,9 @@
                                 <state key="normal" title="Highscores">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dsV-Tb-76A" kind="show" id="cbm-zB-bF9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVh-e6-YSg">
                                 <rect key="frame" x="285" y="188" width="166" height="38"/>
@@ -156,6 +175,9 @@
                                 <state key="normal" title="Options">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ok5-Rf-uJi" kind="show" id="e0U-fI-ZW0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -165,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqc-df-eOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1214" y="879"/>
+            <point key="canvasLocation" x="407" y="1687"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="VvY-SW-4aM">
@@ -207,7 +229,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZY-Nj-aBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1214" y="1357"/>
+            <point key="canvasLocation" x="-549" y="1065"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZTn-yQ-m8z">
@@ -226,6 +248,9 @@
                                 <state key="normal" title="Pause">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="7dw-sj-sRq" kind="show" id="fbR-C9-ImQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -235,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwa-my-3Zp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="879"/>
+            <point key="canvasLocation" x="1214" y="1039"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SZD-xd-ghB">
@@ -267,6 +292,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPs-n3-8qS">
+                                <rect key="frame" x="626" y="38" width="69" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -275,7 +307,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gj0-is-pTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="1357"/>
+            <point key="canvasLocation" x="358" y="1039"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="w41-bh-21Y"/>
+        <segue reference="cbm-zB-bF9"/>
+        <segue reference="e0U-fI-ZW0"/>
+    </inferredMetricsTieBreakers>
 </document>
